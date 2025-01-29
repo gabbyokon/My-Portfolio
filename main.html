@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .container{
+        flex-direction: row; display: flex;
+    }
+    .first{
+        padding-left: 20px; padding-right: 10px; background-color: rgb(41, 41, 219); align-content: center;
+        align-content: center;
+    }
+    .second{width: 50%; height: 100%; display: block; padding-left: 50px;
+
+    }
+    h2{
+        color: white;
+    }
+img{
+        align-self: center; justify-self: center; 
+    }
+.form{
+    position:relative;
+    }
+    .blue{
+        background-color: blue; color: aliceblue; border: 0cap;
+        padding-top: 5px; padding-bottom: 5px; margin-top: 10px;
+    }
+    .black{
+        background-color: rgb(11, 11, 15); color: aliceblue; border: 0cap;
+        padding-top: 5px; padding-bottom: 5px;
+    }
+    
+    
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="first">
+        <h2>Social media shared today, tomorrow or by location</h2>
+        <img src="/phone.png" alt="phone image" width="450px" height="400px" />
+        </div>
+        
+        <div class="second">
+            <p>Capzul</p>
+            <h3>Create account</h3>
+            <p>For bacteria bond or remotely</p>
+
+            <div class="form">
+                <form action="signup.php" method="post">
+                <div class="name">
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName">
+    
+                <label for="lastName">Last Name:</label>
+                <input type="text" id="lastName" name="lastName"> 
+                </div>
+                <br>
+                <div>
+                <label for="email">Email or Phone Number:</label>
+                <input type="text" id="email" name="email">
+
+                <label for="Date of Birth">Date of Birth:</label>
+                <input type="date" id="DateofBirth" name="DateofBirth">
+                 </div>
+                <br>
+            
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password">
+                 
+                <label for="confirm password"> Confirm Password:</label>
+                <input type="password" id="confirm password" name="confirm password">
+                </form>
+            </div>
+                <br>
+                <input type="checkbox" id="tick-button"/>
+                <label for="tick-button">Remember me</label> 
+                
+                <a href="password">Forgot Password?</a>
+                
+                <br>
+                <input type="checkbox" id="tick-button"/>
+                <label for="tick-button">I agree to all the terms and privacy policy</label> 
+                <br>
+                <button class="blue">Create Account</button>
+                <button class="black">Sign in with google</button>
+                <br>
+                <p>Don't have an account? <a href="login">Log in</a></p>
+        </div>
+    </div>
+</body>
+</html>
